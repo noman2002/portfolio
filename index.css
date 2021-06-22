@@ -1,0 +1,138 @@
+img{
+    border-radius: 100%;
+    width: 20%
+   
+}
+.display{
+ position: absolute;
+  top: 5%;
+  left: 40%;
+}
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap') ;
+
+body {
+  background: #fff;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-family: 'Times New Roman', ;
+}
+
+body {
+  animation: scroll 70s linear infinite;
+  background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"), #111111;
+  color: #eee;
+  height: 100vh;
+  min-width: 360px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  
+}
+
+@keyframes scroll {
+   100%{
+    background-position:0px -3000px;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .wrapper {
+    animation: scroll 300s linear infinite;
+  }
+}
+
+@media (min-width: 670px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+:root {
+  --shadow-color: #080808;
+  --shadow-color-light: rgb(184, 179, 179);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+ 
+}
+
+body {
+  font-family: "Archivo", sans-serif;
+  background-color: #2d3533;
+}
+
+/* p {
+  margin: calc(50vh - 40px) auto 0 auto;
+  font-size: 65px;
+  text-transform: uppercase;
+  font-family: "Archivo Black", "Archivo", sans-serif;
+  font-weight: normal;
+  display:block;
+  height:50rem;
+  text-align:start;
+    
+  
+} */
+
+h2{
+  
+    font-size: 400%;
+    text-transform: uppercase;
+    font-family: "Archivo Black", "Archivo", sans-serif;
+    font-weight: normal;
+    display:block; 
+    height:0rem;
+    /* text-align:start; */
+    
+}
+
+.logo-1 {
+  color: white;
+  animation: neon 10s infinite;
+  margin-top: 10rem;
+}
+.logo-1:hover{
+  color: rgb(12, 12, 11);
+  animation: neon 10s infinite;
+  margin-top: 10rem;
+}
+
+
+
+.logo-2 {
+  color: white;
+  animation: neon 10s infinite;
+  margin-top: 10rem;
+}
+.logo-2:hover{
+  color: rgb(12, 12, 11);
+  animation: neon 10s infinite;
+  margin-top: 10rem;
+}
+
+
+
+@keyframes neon {
+  0% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+    0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+    0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+  }
+  50% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+    0 0 5px var(--shadow-color-light), 0 0 15px var(--shadow-color-light), 0 0 25px var(--shadow-color-light),
+    0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 60px var(--shadow-color), 0 0 80px var(--shadow-color), 0 0 110px var(--shadow-color), 0 0 210px var(--shadow-color);
+  }
+  100% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+    0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+    0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+  }
+}
